@@ -1,0 +1,341 @@
+.navbar {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.water::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: -1;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin: 5em 1em;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    position: relative;
+    bottom: 7em;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    background-color: rgb(63, 241, 63);
+    border: none;
+    position: relative;
+    bottom: 7em;
+    font-size: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.buy:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.now {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+    width: 80px;
+}
+
+.now:active {
+    color: red;
+    cursor: pointer;
+}
+
+.cost {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+   
+    font-weight: normal;
+}
+
+.cost h2 {
+    font-weight: normal;
+    position: relative;
+    bottom: 7em;
+}
+
+.Contact {
+    background-color: gray;
+    width: 100%;
+    height: auto;
+    padding: 2em 1em;
+    position: relative;
+    bottom : 11em;
+}
+
+.Contact h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2em auto;
+    gap: 1em;
+    width: 90%;
+    max-width: 600px;
+}
+
+.form:hover {
+    cursor: pointer;
+}
+
+.firstname,
+.email,
+.textdata {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.click,
+.submit {
+    border: solid 2px;
+    background-color: rgb(60, 236, 60);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit {
+    width: 50%;
+    margin: auto;
+}
+
+.press {
+    color: white;
+    text-align: center;
+}
+
+.press:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+}
+
+.press:active {
+    color: red;
+    cursor: pointer;
+}
+
+.terms {
+    color: white;
+    text-align: center;
+}
+
+.conditions {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.conditions:active {
+    color: red;
+    text-decoration: underline;
+}
+
+.pop-up {
+    border: solid 1px white;
+    border-radius: 5px;
+    margin: 3em auto;
+    width: 90%;
+    max-width: 400px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 1em;
+}
+
+.pop-up h1 {
+    text-align: center;
+}
+
+#x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.2s ease; 
+}
+
+#x:hover {
+    color: #ff6666;
+}
+
+#x:active {
+    color: red;
+}
+
+.Bottle {
+    width: 100%;
+    display: block;
+    margin: 1em auto;
+}
+
+.selectcolor,
+.selectengraving,
+.selectpackaging,
+.Packaging {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+}
+
+#colorSelect,
+#engravingSelect,
+#Packagingselect {
+    width: 100px;
+    padding: 2px;
+}
+
+#Total,
+.cart {
+    text-align: center;
+    margin: 1em auto;
+}
+
+.cart {
+    background-color: rgb(63, 241, 63);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cart:hover {
+    color: #ff6666;
+}
+
+.cart:active {
+    color: red;
+}
+
+.link {
+    color: blue;
+}
+
+.link:active {
+    color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .heading {
+        font-size: 20px;
+        margin: 2em 1em;
+    }
+
+    .form,
+    .firstname,
+    .email,
+    .textdata,
+    .submit {
+        width: 90%;
+    }
+
+    .buy,
+    .cart {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .pop-up {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .submit,
+    .cart,
+    .buy {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #colorSelect,
+    #engravingSelect,
+    #Packagingselect {
+        width: 80px;
+    }
+}

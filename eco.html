@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eco.css">
+    <script src="https://kit.fontawesome.com/900472fe76.js" crossorigin="anonymous"></script>
+    <title>EcoSmart Water Bottle</title>
+</head>
+<body>
+    <header id="Home">
+        <nav class="navbar">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Feature">Feature</a></li>
+        <li><a href="#price">Pricing</a></li>
+        <li><a href="#Contact">Contact us </a></li>
+        </nav>
+    </header>
+<main class="water">
+    <section  id="Feature">
+      
+             <h1 class="heading"> EcoSmart Water Bottle </h1>
+             <p class="text">EcoSmart Water Bottle</p>
+             <button class="buy" onclick="showbuydialog()" id="buy"> <span class="now">Buy now </span></button>
+
+    </section>
+    <section>
+        <dialog id="pop-up" class="pop-up">
+            <button onclick="x()" class="close"><i class="fa-solid fa-x" id="x" ></i></button>
+             <h1>EcoSmart water Bottle</h1>
+             <img src="blue-plastic-bottle-with-green-lid-generative-ai_437323-8655.avif" class="Bottle">
+
+             <label for="colorSelect" class="color">Select Color</label>
+             <div class="selectcolor">
+               <select id="colorSelect" name="colors">
+                 <option value="" disabled selected>Select Color</option>
+                 <option value="red">Red</option>
+                 <option value="green">Green</option>
+                 <option value="blue">Blue</option>
+               </select>
+             </div>
+<br> 
+    <label class="engraving">Engraving</label>
+    <div class="selectengraving">
+        <select id="engravingSelect" name="engravings">
+          <option value="" disabled selected>Select engraving</option>
+          <option value="yes">Yes (+ R94)</option>
+          <option value="No">No</option>    
+        </select>
+      </div>   
+<br>
+<label class="Packaging">Packaging</label>
+<div class="selectpackaging">
+    <select id="Packagingselect" name="Packaging">
+      <option value="" disabled selected>Select Packaging</option>
+      <option value="kraft">Recycled Kraft Paper Box (Free)</option>
+      <option value="cotton">Reusable Drawstring Cotton Bag (+R25)</option>
+      <option value="pulp">Biodegradable Molded Pulp Packaging (+R15)</option>   
+    </select>
+  </div>  
+  <button type="button" class="cart" onclick="data()"> Add to Cart </button>
+  <p id="message" style="color: red;"></p>
+<h2 id="Total">Total : <span class="Total"> </span></h2>
+        </dialog>
+<section class="pricing" id="Pricing" >
+<div class="cost">
+    <h2> Total Price : <span class="price" id="price">  </span> </h2> 
+</div>
+</section>  
+          
+           </section>
+</main>
+<footer class="Contact" id="Contact">
+    <h1>Contact us</h1>    
+    <br>
+    <br>
+    <form class="form" >
+       <input type="text" placeholder="Your name" class="firstname" id="fname" required>
+       <input type="email" placeholder="Your email" class="email" id="email" required> 
+       <textarea id="message" name="message" placeholder="your message" class="textdata" required></textarea>
+       <input type="checkbox" class="click" id="click" required> 
+       <p class="terms">I agree to the <span class="conditions"><a href="https://www.ecosmartus.com/legal-information/terms-and-conditions?repeat=w3tc" target="_blank" class="link"> terms and conditions </a></span></p>
+<br>
+    <button type="submit" class = "submit" required ><span class="press">Submit</span></button>
+    </form>
+   </footer>
+
+   <script src="eco.js"></script>
+</body>
+</html>
